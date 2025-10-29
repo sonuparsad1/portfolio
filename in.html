@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Sonu Parsad — Portfolio. B.Tech CSE • Java • DSA • Python • Web Dev • Patent Writer" />
+  <title>Sonu Parsad — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- THEME RADIOS: must be before everything so CSS sibling selector works -->
+  <input class="theme-radio" id="blue"  type="radio" name="theme" checked />
+  <input class="theme-radio" id="purple" type="radio" name="theme" />
+  <input class="theme-radio" id="gold"   type="radio" name="theme" />
+  <input class="theme-radio" id="coral"  type="radio" name="theme" />
+  <input class="theme-radio" id="noir"   type="radio" name="theme" />
+  <input class="theme-radio" id="sand"   type="radio" name="theme" />
+  <!-- bacground video -->
+  
+  <!-- BACKGROUND VIDEO -->
+
+
+
+
+<div class="video-wrapper">
+  <video autoplay muted loop playsinline id="bgVideo">
+    <source src="bacgvid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay" id="video-overlay"></div>
+</div>
+<!-- <video autoplay muted loop playsinline id="bgVideo">
+  <source src="bacgvid.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Color overlay (matches theme) -->
+<div class="video-overlay"></div> -->
+
+
+  <!-- BACKGROUND LAYERS -->
+<div class="bg-root" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-aurora"></div>
+  <div class="bg-particles"></div>
+  <div class="bg-noise"></div>
+
+  <!-- 🟣 Interactive top-region droplets canvas -->
+  <canvas id="topParticles"></canvas>
+</div>
+
+
+  <!-- THEME UI -->
+  <div class="theme-ui" role="toolbar" aria-label="Theme switcher">
+    <label for="blue"  class="swatch blue"  title="Teal theme" aria-hidden="false" tabindex="0"></label>
+    <label for="purple"class="swatch purple"title="Indigo theme" aria-hidden="false" tabindex="0"></label>
+    <label for="gold"  class="swatch gold"  title="Gold theme" aria-hidden="false" tabindex="0"></label>
+    <label for="coral" class="swatch coral" title="Coral theme" aria-hidden="false" tabindex="0"></label>
+    <label for="noir"  class="swatch noir"  title="Noir theme" aria-hidden="false" tabindex="0"></label>
+    <label for="sand"  class="swatch sand"  title="Sand theme" aria-hidden="false" tabindex="0"></label>
+  </div>
+<!-- ENHANCED INTRO LOADER -->
+<div id="introLoader" class="intro-loader">
+  <video autoplay muted playsinline id="introVideo">
+    <source src="intro.mp4" type="video/mp4">
+  </video>
+
+  <div class="loader-overlay"></div>
+
+  <div class="loader-content">
+    <h1 class="loader-title" id="introTitle">Sonu Parsad</h1>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <p class="loader-sub">Loading your experience…</p>
+    <!-- <button id="skipIntro" class="skip-btn">Skip</button> -->
+  </div>
+</div>
+
+
+  <!-- GLASS WRAPPER -->
+  <main class="wrap" id="app" role="main">
+    <!-- HERO -->
+    <header class="hero" id="hero">
+      <div class="avatar-wrap" id="avatarWrap" aria-hidden="false">
+        <!-- Replace myimage.jpeg with your file -->
+        <img src="myimage.png" alt="Sonu Parsad" class="avatar" id="avatar">
+        <div class="avatar-ring" aria-hidden="true"></div>
+      </div>
+
+      <h1 class="title" id="mainTitle">Sonu Parsad</h1>
+      <p class="subtitle">B.Tech CSE • Java • DSA • Python • Web Dev • Patent Writer</p>
+      <h2 class="typing-text" id="typingText"></h2>
+
+
+      <div class="cta" role="region" aria-label="Primary calls to action">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn primary" href="#contact">contact</a>
+        <!-- Gmail compose (opens Gmail compose in new tab). Also keep mailto fallback for default mail clients. -->
+        
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <h2 id="aboutTitle">About Me</h2>
+      <p>I’m <strong>Sonu Parsad</strong>, a creative technologist blending elegant algorithms with polished UI and practical hardware systems. I build scalable web apps, efficient ML prototypes, and patent-grade ideas.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <h2 id="skillsTitle">Skills</h2>
+      <div class="skills" role="list" aria-label="skills list">
+        <span role="listitem">Java</span>
+        <span role="listitem">Data Structures</span>
+        <span role="listitem">Python</span>
+        <span role="listitem">Web Development</span>
+        <span role="listitem">Patent Writing</span>
+        <span role="listitem">IoT Systems</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <h2 id="projectsTitle">Projects</h2>
+      <div class="projects" id="projectsGrid">
+        <article class="card" tabindex="0" aria-labelledby="p1">
+          <h3 id="p1">Smart Dog Shelter</h3>
+          <p>IoT automation and sensing system for pet comfort — ultrasonic level sensing, actuated heating and remote alerts.</p>
+        </article>
+
+        <article class="card" tabindex="0" aria-labelledby="p2">
+          <h3 id="p2">E-Waste Management</h3>
+          <p>Hardware detection and automated segregation pipeline with telemetry dashboards and analytics.</p>
+        </article>
+
+        <article class="card" tabindex="0" aria-labelledby="p3">
+          <h3 id="p3">Cyber Portfolio</h3>
+          <p>CSS-first futuristic UI showcasing layered glass, 3D parallax and accessible interactions.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Contact</h2>
+      <p class="muted">Connect via
+        <a class="btn ghost"  href="https://www.linkedin.com/in/spsaharan/" target="_blank" rel="noopener noreferrer">LinkedIn</a> •
+        <a class="btn ghost"  href="https://github.com/sonuparsad1" target="_blank" rel="noopener noreferrer">GitHub</a> •
+        <a class="btn ghost" id="emailBtn" href="https://mail.google.com/mail/?view=cm&fs=1&to=sonusa470@gmail.com&su=Hello%20Sonu&body=Hi%20Sonu%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer">Email</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Sonu Parsad — Crafted with care.</p>
+    </footer>
+  </main>
+
+  <!-- External JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>
